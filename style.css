@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #e0e0e0;
+    background: radial-gradient(ellipse at centre, #1a2a4f 0%, #000000 70%);
+    background-attachment: fixed;
+    
+
+}
+
+header{
+    background-color: rgba(26, 30, 43, 0.8);
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav li{
+    margin-left: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #b0b0b0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: #ffffff;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.hero-text {
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+
+.hero-image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 25px;
+}
+
+.cta-button{
+    background-color: #007aff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover{
+    background-color: #0056b3;
+}
+
+.features{
+    padding: 60px 20px;
+    text-align: center;
+
+}
+
+.features h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.features p{
+    font-size: 18px;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card{
+    background-color: #1a1e2b;
+    border: 10x solid #333;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-5px);
+    border-color: #007aff;
+
+.feature-card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.feature-card p{
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #111;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translate(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.hero-text{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.hero-image {
+    animation-name: float;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
