@@ -10,10 +10,17 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">FinTrack</a>
+            <a href="index.html" class="logo">
+                <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="logo-bar" x="4" y="20" width="8" height="12" rx="2"/>
+                    <rect class="logo-bar" x="14" y="12" width="8" height="20" rx="2"/>
+                    <rect class="logo-bar" x="24" y="4" width="8" height="28" rx="2"/>
+                </svg>
+                <span>Fin<span style="font-size: 24px; font-weight: bold; color:rgb(22, 145, 206);">Track</span></span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Dashboard</a></li>
                 <li><a href="history.html">History</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -25,17 +32,17 @@
         <section class="hero">
     
             <div class="hero-text">
-                <h1>Take control of your finances.</h1>
+                <h1>Take control of your <span style="color:rgb(22, 145, 206)">Finances</span></h1>
                 <p>
                     FinTrack is the simplest way to track your income and expenses.
                     Get started in seconds.
                 </p>
-                <a href="dashboard.html" class="cta-button">Get Started - It's Free</a>
+                <a href="login.html" class="cta-button">Get Started</a>
             </div>
             
             <div class="hero-image">
                 
-                <img src="https://via.placeholder.com/450x350.png?text=Finance+Illustration" alt="Finance App Illustration">
+                <img src="https://coinswitch.co/_next/static/media/phone-app-mob.681cfa70.webp" alt="Finance App Illustration" >
             </div>
             
         </section>
@@ -54,7 +61,7 @@
                     <h3>See Real-time Balance</h3>
                     <p>Your balance is automatically calculated and updated</p>
                 </div>
-                <div class="feature-class">
+                <div class="feature-card">
                     <h3>Data that Stays</h3>
                     <p>Uses Local Storage to save your data in your browser</p>
                 </div>

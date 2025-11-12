@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - FinTrack</title>
+    
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="logo-bar" x="4" y="20" width="8" height="12" rx="2"></rect>
+                    <rect class="logo-bar" x="14" y="12" width="8" height="20" rx="2"></rect>
+                    <rect class="logo-bar" x="24" y="4" width="8" height="28" rx="2"></rect>
+                </svg>
+                <span>Fin<span style="color:rgb(22, 145, 206)">Track</span></span>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="dashboard">
+        <section class="summary">
+            <h2>Your <span style="color: rgb(22, 145, 206);">Dashboard</span></h2>
+
+            <div class="summary-cards">
+                
+                <div class="card">
+                    <h3 style="color:#b0b0b0">Total Balance:</h3>
+                    <p id="balance">$0.00</p>
+                </div>
+                
+                <div class="card income">
+                    <h3 style="color:#b0b0b0">Total Income:</h3>
+                    <p id="income">$0.00</p>
+                </div>
+                
+                <div class="card expense">
+                    <h3 style="color:#b0b0b0">Total Expense:</h3>
+                    <p id="expense">$0.00</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="content-wrapper">
+            <div class="form-container">
+                <h3>Add New Transaction</h3>
+                
+                <form id="transaction-form">
+                    <div class="form-control">
+                        <label for="text" style="font-weight: bold;">Description</label>
+                        <input type="text" id="text" placeholder="Enter description..." />
+                    </div>
+                    <div class="form-control">
+                        <label for="amount" style="font-weight: bold;">Amount</label>
+                        <p>(Negative = Expense, Positive = Income)</p>
+                        <input type="tel" id="amount" placeholder="Enter amount..." />
+                    </div>
+                    <button class="btn">Add Transaction</button>
+                </form>
+            </div>
+            <div class="history-container">
+                <h3>Recent History</h3>
+                
+                <ul id="transaction-list" class="list">
+                    <li class="expense-item">
+                        Coffee Shop <span>-$5.00</span>
+                        <button class="delete-btn">x</button>
+                    </li>
+                    <li class="income-item">
+                        Salary <span>+$1,500.00</span>
+                        <button class="delete-btn">x</button>
+                    </li>
+                    <li class="expense-item">
+                        Groceries <span>-$75.20</span>
+                        <button class="delete-btn">x</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="chart-container">
+                <h3>Spending Breakdown</h3>
+                <div class="donut-chart">
+                    <span class="chart-center-text">Total<br>Used</span>
+                </div>
+                <div class="chart-legend">
+                    <ul>
+                        <li style="--color: #e74c3c;">Food</li>
+                        <li style="--color: #3498db;">Transport</li>
+                        <li style="--color: #9b59b6;">Utilities</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </section>
+                
+     </main>
+
+
+    <footer>
+        <p>&copy; 2025 FinTrack. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>
