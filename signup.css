@@ -11,7 +11,7 @@ body {
     color: #e0e0e0;
     
     background: radial-gradient(ellipse at top center, 
-                                 rgb(22, 145, 206) 0%, 
+                                 rgb(11, 81, 116) 0%, 
                                  #000 70%);
     background-attachment: fixed;
 }
