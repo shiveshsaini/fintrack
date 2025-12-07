@@ -326,3 +326,15 @@ main.dashboard {
 .donut-chart:hover::before {
     opacity: 0;
 }
+
+
+.form-control select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: #111;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
